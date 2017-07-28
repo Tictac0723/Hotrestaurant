@@ -1,3 +1,4 @@
+
 var reservations = [{
 	name: "Tina",
 	phoneNumber: 1234567890,
@@ -16,3 +17,5 @@ var reservations = [{
 	email: "gene@bobs.com",
 	unique: "Gene Belcher"
 }]
+
+module.exports = reservations;

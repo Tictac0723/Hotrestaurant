@@ -88,12 +88,12 @@
         <hr id="line">
         <br>
         <p>
-        <a href="./tables.html">
+        <a href="./tables">
             <button type="button" id="button1" class="btn btn-lg">
                 <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> View Tables
             </button>
             </a>
-            <a href="./home.html">
+            <a href="./">
             <button type="button" id="button2" class="btn btn-lg">
                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
             </button>
@@ -125,8 +125,28 @@
  </div>
 <br>
     <div id="links">
-        <p><a class="nav-link" href="./tables.html">API Table Link</a> | <a class="nav-link" href="./reserve.html">API Wait List</a> |
+        <p><a class="nav-link" href="./tables">API Table Link</a> | <a class="nav-link" href="./reserve.html">API Wait List</a> |
             <a class="nav-link" href="https://github.com/Tictac0723/Hotrestaurant">GitHub Repo</a></p>
     </div>
+
+    <script>
+    $(document).ready(function() {
+
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            var data = {};
+            
+            data.phone = $('#phone').val().trim();
+            data.name = $('#name').val().trim();
+            data.email = $('#email').val().trim();
+            data.user = $('#user').val().trim();
+
+            console.log(data);
+            $.post('/tables', data);
+
+        });
+
+    });
+    </script>
 </body>
 </html>
