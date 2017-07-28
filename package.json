@@ -1,0 +1,27 @@
+{
+  "name": "hotrestaurant",
+  "version": "1.0.0",
+  "description": "Hot Restaurant activity",
+  "main": "server.js",
+  "scripts": {
+    "test": "poop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tictac0723/Hotrestaurant.git"
+  },
+  "keywords": [
+    "inclass"
+  ],
+  "author": "Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tictac0723/Hotrestaurant/issues"
+  },
+  "homepage": "https://github.com/Tictac0723/Hotrestaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
